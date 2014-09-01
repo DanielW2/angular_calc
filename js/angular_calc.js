@@ -40,27 +40,19 @@ function CalcCtrl($scope) {
 		return (10*oldNum) + newNum;
 	}
 
-	$scope.output = function (out) {
-		$scope.diplay = out;
-	}
-
 	function equals() {
-		switch (lastOp){//this whole algorithmic hooha has gone crazy buggy.
+		switch (lastOp){
 		case "+":
 			ansOut = ansOut += numIn;
-			//numIn = 0;
 			break;
 		case "-":
 			ansOut = ansOut -= numIn;
-			//numIn = 0;
 			break;
 		case "*":
 			ansOut = ansOut *= numIn;
-			//numIn = 0;
 			break;
 		case "/":
 			ansOut = ansOut /= numIn;
-			//numIn = 0;
 			break;
 		case ".":
 			ansOut = decimal(ansOut, numIn);
@@ -68,5 +60,12 @@ function CalcCtrl($scope) {
 		default:
 			if (numIn !== 0) ansOut = numIn;
 		}
+	}
+
+	function decimal(oldNum, newNum) {//needs writing
+		//########################
+		//This will need more jiggerypokery than
+		//I want to spend time on right now.
+		return oldNum + (newNum/10);
 	}	
 }

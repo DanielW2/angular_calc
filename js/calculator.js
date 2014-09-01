@@ -130,4 +130,5 @@ function decimal(ansOut, numIn) {//needs writing
 	//This function will need to change append from multiplying the old number by 10
 	//and adding the new number to multiplying the new number by 0.1 and adding that
 	//to the old number.
+	//return (10*oldNum) + newNum;
 }
