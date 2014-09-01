@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <title>HTML5 boilerplate – all you really need…</title>
+    <link rel="stylesheet" href="css/calc_style.css">
+	<script src="http://code.angularjs.org/angular-1.0.0rc3.min.js"></script>
+	<script src="js/angular_calc.js"></script>
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<div ng-controller="CalcCtrl">
+		{{output}}
+		<br>
+		<button name="btn7" class="numberbutton" value="7" ng-click='updateOutput(7)'>7</button>
+		<button name="btn8" class="numberbutton" value="8" ng-click='updateOutput(8)'>8</button>
+		<button name="btn9" class="numberbutton" value="9" ng-click='updateOutput(9)'>9</button>
+		<button name="btnDivide" class="operandbutton" ng-click='calculate()'>/</button>
+		<br>
+		<button name="btn4" class="numberbutton" value="4" ng-click='updateOutput(4)'>4</button>
+		<button name="btn5" class="numberbutton" value="5" ng-click='updateOutput(5)'>5</button>
+		<button name="btn6" class="numberbutton" value="6" ng-click='updateOutput(6)'>6</button>
+		<button name="btnMulti" class="operandbutton" ng-click='calculate()'>*</button>
+		<br>
+		<button name="btn1" class="numberbutton" value="1" ng-click='updateOutput(1)'>1</button>
+		<button name="btn2" class="numberbutton" value="2" ng-click='updateOutput(2)'>2</button>
+		<button name="btn3" class="numberbutton" value="3" ng-click='updateOutput(3)'>3</button>
+		<button name="btnMinus" class="operandbutton" ng-click='calculate()'>-</button>
+		<br>
+		<button name="btn0" class="numberbutton" value="0" ng-click='updateOutput(0)'>0</button>
+		<button name="btnRadix" class="operandbutton" ng-click='calculate()'>.</button>
+		<button name="btnEquals" class="operandbutton" ng-click='calculate()'>=</button>
+		<button name="btnPlus" class="operandbutton" ng-click='calculate()'>+</button>
+	</div>
+</body>
+</html>
